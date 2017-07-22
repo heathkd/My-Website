@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
 
+        <!-- Bootstrap core CSS -->
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="starter-template.css" rel="stylesheet">
+
+        <!--my CSS-->
         <link rel="stylesheet" type="text/css" href="mystyle.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <link rel="stylesheet" href="ie10-viewport-bug-workaround.css" >
+
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     </head>
     <body>
-
         <!--Intro-->
         <div id="intro" class="relative">
           <img id="skyline" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Toronto_skyline_tommythompsonpark_cropped.jpg" alt="Toronto Skyline">
@@ -51,14 +64,14 @@
               enough text so I will just ramble on until the div looks asthetically pleasing. If
             </pre>
           </div>
-          <div id="nav-bar-start-projects" class="absolute-text nav-bar-start"> </div>
+          <div id="nav-bar-start-projects" class="nav-bar-start"> </div>
         </div>
 
         <!--Projects Section-->
-        <div id="projects">test
+        <div id="projects" class="relative">
           <h1 id="projects-title" class="title">Projects</h1>
           <p id="projects-blurb">Click on a project to learn more.</p>
-          <div id="projects-table-div">
+          <!--<div id="projects-table-div">
             <table id="projects-table">
                 <tr class="projects-table-row-1" style="padding: 20px; margin: 20 px;">
                   <td id="projects-table-element">Project 1</td>
@@ -71,60 +84,56 @@
                   <td id="projects-table-element">Project 6</td>
                 </tr>
             </table>
-          </div>
+          </div>-->
+          <div id="nav-bar-start-experience" class="nav-bar-start"> </div>
         </div>
 
-        <!--Navigation Bar-->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div id="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">HEATHER D'SOUZA</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#nav-bar-start-about">About</a></li>
-                    <li><a href="#nav-bar-start-projects">Projects</a></li>
-                    <li>Experience</li>
-                    <li>Skills</li>
-                    <li>Education</li>
-                    <li>Contact</li>
-                </ul>
-                <!-- <ul id="name">
-                    <li id="nav-bar-element-list"><a href="#intro">HEATHER D'SOUZA</a></li>
-                </ul> -->
-            </div>
-          </div>
-        </nav>
-
         <!--Experience Section-->
-        <div id="experience" class="section">
+        <div id="experience" class="relative">
           <h1 id="projects-title" class="title">Experience</h1>
+          <div id="nav-bar-start-skills" class="nav-bar-start"> </div>
         </div>
 
         <!--Skills Section-->
-        <div id="skills" class="section">
+        <div id="skills" class="relative">
           <h1 id="projects-title" class="title">Skills</h1>
+          <div id="nav-bar-start-education" class="nav-bar-start"> </div>
         </div>
 
         <!--Education Section-->
-        <div id="education" class="section">
+        <div id="education" class="relative">
           <h1 id="projects-title" class="title">Education</h1>
+          <div id="nav-bar-start-contact" class="nav-bar-start"> </div>
         </div>
 
         <!--Contact Section-->
-        <div id="contact" class="section">
+        <div id="contact" class="relative">
           <h1 id="projects-title" class="title">Contact</h1>
         </div>
 
-
-
-
-
+        <!--Navigation Bar-->
+        <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div id="navbar-header" class="col-xs-6" style="padding:15px; margin-right:0; float:left;">
+              <a  class="navbar-brand nav-bar-element" href="#nav-bar">HEATHER D'SOUZA</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse col-xs-6" style="height:50px float:left;">
+                <ul id="nav-bar-list" class="nav navbar-nav">
+                    <li class="nav-bar-element"><a href="#nav-bar-start-about">About</a></li>
+                    <li class="nav-bar-element"><a href="#nav-bar-start-projects">Projects</a></li>
+                    <li class="nav-bar-element"><a href="#nav-bar-start-experience">Experience</a></li>
+                    <li class="nav-bar-element"><a href="#nav-bar-start-skills">Skills</a></li>
+                    <li class="nav-bar-element"><a href="#nav-bar-start-education">Education</a></li>
+                    <li class="nav-bar-element"><a href="#nav-bar-start-contact">Contact</a></li>
+                </ul>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+          </div>
+        </nav>
     </body>
 </html>

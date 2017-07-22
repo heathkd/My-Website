@@ -1,0 +1,278 @@
+div#about
+{
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    height: -webkit-calc(100vh - 50px);
+    height: -moz-calc(100vh - 50px);
+    height: calc(100vh - 50px);
+    margin:0;
+    clear:left;
+}
+
+img#about-background
+{
+    width: 100%;
+    height: inherit;
+}
+
+pre#about-blurb
+{
+    top: 28%;
+    right: 7.5%;
+    left: 7.5%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Avenir, Arial;
+    overflow: scroll;
+}
+
+div#about-blurb-div
+{
+    width: 60%;
+    height: inherit;
+}
+
+h1#about-title
+{
+    color: #303435;
+    text-align: center;
+}
+
+div#contact
+{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #726767;
+    clear: both;
+}
+
+div#education
+{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #5499C7;
+    clear: both;
+}
+
+div#experience
+{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #5499C7;
+    clear: both;
+}
+/*for moving gears in nav bar*/
+img#gear {
+
+-webkit-transition: -webkit-transform .8s ease-in-out;
+transition:         transform .8s ease-in-out;
+}
+
+img#gear:hover {
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+
+div#intro
+{
+    padding-top:50px;
+    min-width: 100%;
+    margin:0;
+}
+
+p#intro-statement
+{
+    top: 240px;
+    left: 0;
+    font-family: Avenir, Arial;
+    width:100%;
+    text-align:center;
+    font-size: 4em;
+    color: #303435;
+}
+
+#name
+{
+    float: left;
+}
+
+#nav-bar
+{
+    background-color: #303435;
+    min-height: 50px;
+    min-width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    clear: left;
+}
+
+li#nav-bar-element-list, .nav-bar-element
+{
+
+    display: inline;
+    margin: 15px;
+    color: white;
+    font-family: Avenir, Arial;
+}
+
+ul#nav-bar-list
+{
+    float: right;
+}
+
+/*img#intro-image::after
+{
+  content: "";
+  display: table;
+  clear:both;
+}*/
+
+img#profile-pic
+{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: inherit;
+}
+
+div#profile-pic-div
+{
+    width: 40%;
+    height: inherit;
+    float: left;
+}
+
+div#projects
+{
+    width: 100vw;
+    height: 100vh;
+    clear:both;
+    margin:0;
+    background: #726767;
+}
+
+p#projects-blurb
+{
+    width:100%;
+    font-family: Avenir, Arial;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+table#projects-table
+{
+    bottom: 40%;
+    /*margin: 0 auto;*/
+    height: inherit;
+}
+
+div#projects-table-div
+{
+      top: 20%;
+      height: 100px;
+}
+
+td#projects-table-element
+{
+    border: black solid 1px;
+    border-radius: 5px;
+    display: inline;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+tr#projects-table-row-1
+{
+
+}
+
+h1#projects-title
+{
+    color: white;
+    text-align: center;
+}
+
+div#skills
+{
+    width: 100vw;
+    height: 100vh;
+    clear:both;
+    margin:0;
+    background: #726767;
+}
+
+img#skyline
+{
+    width:100%;
+    height:100%;
+}
+
+.absolute-text
+{
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+p.body-text
+{
+    font-family: Aleo, Avenir, Arial;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.nav-bar-element:hover
+{
+    border-bottom: 2px solid;
+}
+
+.nav-bar-start
+{
+    bottom:0;
+    width:100%;
+    min-height:50px;
+    position: absolute;
+    clear: both;
+}
+
+.relative
+{
+    position: relative;
+    float: left;
+}
+
+div.section
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h1.title
+{
+    font-family: Avenir, Arial;
+    top: 0;
+    width: 100%;
+    font-size: 180px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+a
+{
+    color:inherit;
+    text-decoration: none;
+}
+
+body
+{
+    margin:0;
+    background-color: #303435;
+
+}
