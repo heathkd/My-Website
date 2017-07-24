@@ -1,3 +1,125 @@
+/*image gallery*/
+div.gallery
+{
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover
+{
+    border: 1px solid #777;
+}
+
+div.gallery img
+{
+    width: 100%;
+    height: auto;
+}
+
+div.desc
+{
+    padding: 0px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive
+{
+    padding: 0 6px;
+    float: left;
+    width: 33.33333%;
+}
+
+.title
+{
+    font-family: Avenir, Arial;
+    top: 0;
+    width: 100%;
+    font-size:165px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#intro-statement
+{
+    top: 240px;
+    left: 0;
+    font-family: Avenir, Arial;
+    width:100%;
+    text-align:center;
+    font-size: 80px;
+    color: #303435;
+}
+
+@media all and (max-width: 1216px)
+{
+    .title
+    {
+        font-size:9em;
+    }
+}
+
+@media all and (max-width: 1216px)
+{
+    #intro-statement
+    {
+        font-size:3em;
+    }
+}
+
+@media all and (max-width: 1216px)
+{
+    #intro-statement
+    {
+        font-size:2.5em;
+    }
+}
+
+
+@media all and (max-width: 814px)
+{
+    .title
+    {
+        font-size:7em;
+    }
+}
+
+@media all and (max-width: 700px)
+{
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media all and (max-width: 623px)
+{
+    .title
+    {
+        font-size:5em;
+    }
+}
+
+@media all and (max-width: 550px)
+{
+    .responsive {
+        width: 100%;
+    }
+    .title
+    {
+        font-size:4em;
+    }
+}
+
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 div#about
 {
     width: 100%;
@@ -84,17 +206,6 @@ div#intro
     margin:0;
 }
 
-p#intro-statement
-{
-    top: 240px;
-    left: 0;
-    font-family: Avenir, Arial;
-    width:100%;
-    text-align:center;
-    font-size: 4em;
-    color: #303435;
-}
-
 #name
 {
     float: left;
@@ -149,8 +260,7 @@ div#profile-pic-div
 
 div#projects
 {
-    width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
     clear:both;
     margin:0;
     background: #726767;
@@ -217,7 +327,7 @@ img#skyline
 .absolute-text
 {
     position: absolute;
-    margin:0;
+    margin:0 auto;
     padding:0;
 }
 
@@ -242,6 +352,15 @@ p.body-text
     clear: both;
 }
 
+.projects-project-title
+{
+    top:50%;
+    width:100%;
+    text-align:center;
+    font-size: 30px;
+    font-family: Avenir, Arial;
+}
+
 .relative
 {
     position: relative;
@@ -250,18 +369,7 @@ p.body-text
 
 div.section
 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-h1.title
-{
     font-family: Avenir, Arial;
-    top: 0;
-    width: 100%;
-    font-size: 180px;
-    padding-bottom: 0;
-    margin: 0;
 }
 
 a
@@ -274,5 +382,5 @@ body
 {
     margin:0;
     background-color: #303435;
-
+    padding:0;
 }

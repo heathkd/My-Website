@@ -32,14 +32,14 @@
         </div>
 
         <!--About Section-->
-        <div id="about" class="relative">
+        <div id="about" class="relative section">
           <div id="profile-pic-div" class="relative">
             <img id="profile-pic" class="absolute-text" src="Website-Image2.jpg" alt="Heather D'Souza">
           </div>
           <div id="about-blurb-div" class="relative">
             <h1 id="about-title" class="title absolute-text">About</h1>
             <img id="about-background" src="https://wallpaperbrowse.com/media/images/background-7.jpg" alt="background">
-            <pre id="about-blurb" class="absolute-text body-text">
+            <p id="about-blurb" class="absolute-text body-text">
 
               Hello! My name is Heather D'Souza. I am an aspiring biomedical engineering student
               at the University of Waterloo. I need to think of aditional text that I can add to
@@ -62,52 +62,87 @@
               this section to make myself sound interesting and employable. I do not know what to
               include right now, so for now, this will do. :D Okay so apparently I didn't include
               enough text so I will just ramble on until the div looks asthetically pleasing. If
-            </pre>
+            </p>
           </div>
           <div id="nav-bar-start-projects" class="nav-bar-start"> </div>
         </div>
 
         <!--Projects Section-->
-        <div id="projects" class="relative">
+        <div id="projects" class="relative section">
           <h1 id="projects-title" class="title">Projects</h1>
           <p id="projects-blurb">Click on a project to learn more.</p>
-          <!--<div id="projects-table-div">
-            <table id="projects-table">
-                <tr class="projects-table-row-1" style="padding: 20px; margin: 20 px;">
-                  <td id="projects-table-element">Project 1</td>
-                  <td id="projects-table-element">Project 2</td>
-                  <td id="projects-table-element">Project 3</td>
-                </tr>
-                <tr class="projects-table-row">
-                  <td id="projects-table-element">Project 4</td>
-                  <td id="projects-table-element">Project 5</td>
-                  <td id="projects-table-element">Project 6</td>
-                </tr>
-            </table>
-          </div>-->
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>KIRSH-EDGE</b></div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>EZ-WALK</b></div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>SWITCH</b></div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>SOLIDWORKS</b></div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>SWITCH</b></div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery relative">
+              <button onclick="displayDescription()">
+                <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
+              </button>
+              <div class="absolute-text desc projects-project-title"><b>CELL TRACKING</b></div>
+            </div>
+          </div>
+          <div style="clear:both;height:50px;"></div>
           <div id="nav-bar-start-experience" class="nav-bar-start"> </div>
         </div>
 
         <!--Experience Section-->
-        <div id="experience" class="relative">
+        <div id="experience" class="relative section">
           <h1 id="projects-title" class="title">Experience</h1>
           <div id="nav-bar-start-skills" class="nav-bar-start"> </div>
         </div>
 
         <!--Skills Section-->
-        <div id="skills" class="relative">
+        <div id="skills" class="relative section">
           <h1 id="projects-title" class="title">Skills</h1>
           <div id="nav-bar-start-education" class="nav-bar-start"> </div>
         </div>
 
         <!--Education Section-->
-        <div id="education" class="relative">
+        <div id="education" class="relative section">
           <h1 id="projects-title" class="title">Education</h1>
           <div id="nav-bar-start-contact" class="nav-bar-start"> </div>
         </div>
 
         <!--Contact Section-->
-        <div id="contact" class="relative">
+        <div id="contact" class="relative section">
           <h1 id="projects-title" class="title">Contact</h1>
         </div>
 
@@ -135,5 +170,11 @@
             </div>
           </div>
         </nav>
+        <script>
+        function displayDescription()
+        {
+            alert("Use jQuery.UIdialog or SweetAlert to make your own pop-up box");
+        }
+        </script>
     </body>
 </html>
