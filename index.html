@@ -73,7 +73,7 @@
           <p id="projects-blurb">Click on a project to learn more.</p>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>KIRSH-EDGE</b></div>
@@ -81,7 +81,7 @@
           </div>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>EZ-WALK</b></div>
@@ -89,7 +89,7 @@
           </div>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>SWITCH</b></div>
@@ -97,7 +97,7 @@
           </div>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>SOLIDWORKS</b></div>
@@ -105,7 +105,7 @@
           </div>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>SWITCH</b></div>
@@ -113,7 +113,7 @@
           </div>
           <div class="responsive">
             <div class="gallery relative">
-              <button onclick="displayDescription()">
+              <button class="project-button" onclick="displayDescription()">
                 <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Forest" width="300" height="200">
               </button>
               <div class="absolute-text desc projects-project-title"><b>CELL TRACKING</b></div>
@@ -164,8 +164,27 @@
         </div>
 
         <!--Contact Section-->
-        <div id="contact" class="relative section">
+        <div id="contact" class="relative section" style="overflow:hidden">
           <h1 id="projects-title" class="title">Contact</h1>
+          <form action="/action_page.php" style="padding:20px;">
+              <section>
+                <div style="float:left;width:20%;margin-right: 2%;">
+                  <label class="labelName" for="fname">First Name</label>
+                  <input id="fname" type="text" name="firstname">
+                </div>
+                <div style="float:left;width:20%;">
+                  <label class="labelName" for="lname">Last Name</label>
+                  <input id="lname" type="text" name="lastname">
+                </div>
+                <br style="clear:both">
+              </section>
+              <label style="clear:both" for="email">Email Address</label><br>
+              <input id="email" type="text" name="email"><br>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" style="height:200px;overflow:hidden;"></textarea>
+              <input id="submit" type="submit" value="Submit">
+          </form>
+          <div style="height:60px;"> </div>
         </div>
 
         <!--Navigation Bar-->

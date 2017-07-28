@@ -164,7 +164,7 @@ h1#about-title
 div#contact
 {
     width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
     margin:0;
     background: #726767;
     clear: both;
@@ -277,6 +277,11 @@ p#projects-blurb
     margin-bottom: 3%;
 }
 
+.project-button
+{
+    border:0;
+}
+
 table#projects-table
 {
     bottom: 40%;
@@ -366,6 +371,7 @@ a
     text-align:center;
     font-size: 30px;
     font-family: Avenir, Arial;
+    color: white;
 }
 
 .relative
@@ -456,7 +462,53 @@ div.section
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
   }
-}*/
+}
+
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #0FA9D6; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#fname, #lname
+{
+    display: block;
+}
+
+.labelName
+{
+    display:block;
+}
+
+#email
+{
+    width:42%
+}
+
+#submit
+{
+    font: Avenir,Arial;
+    font-size:1em;
+    background-color:#57DF74;
+    border-radius:8px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    clear:both;
+    overflow:hidden;
+}
+
+#submit:hover
+{
+    background-color:#45a049;
+}
 
 a
 {
