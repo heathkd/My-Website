@@ -24,6 +24,7 @@
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     </head>
     <body>
+        <?php include formValidation.php ?>
         <!--Intro-->
         <div id="intro" class="relative">
           <img id="skyline" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Toronto_skyline_tommythompsonpark_cropped.jpg" alt="Toronto Skyline">
@@ -166,7 +167,7 @@
         <!--Contact Section-->
         <div id="contact" class="relative section" style="overflow:hidden">
           <h1 id="projects-title" class="title">Contact</h1>
-          <form action="/action_page.php" style="padding:20px;">
+          <form method="post" style="padding:20px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
               <section>
                 <div style="float:left;width:20%;margin-right: 2%;">
                   <label class="labelName" for="fname">First Name</label>
@@ -212,10 +213,19 @@
           </div>
         </nav>
         <script>
-        function displayDescription()
-        {
+          function displayDescription()
+          {
             alert("Use jQuery.UIdialog or SweetAlert to make your own pop-up box");
-        }
+          }
+          function ValidateEmail(mail)
+          {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+            {
+              return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+          }
         </script>
     </body>
 </html>
