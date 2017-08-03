@@ -22,9 +22,11 @@
         <link rel="stylesheet" type="text/css" href="mystyle.css">
 
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <!-- JQuery library -->
+        <script src="jquery-3.2.1.js"></script>
+
     </head>
     <body>
-        <?php include formValidation.php ?>
         <!--Intro-->
         <div id="intro" class="relative">
           <img id="skyline" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Toronto_skyline_tommythompsonpark_cropped.jpg" alt="Toronto Skyline">
@@ -162,12 +164,16 @@
         <div id="education" class="relative section">
           <h1 id="projects-title" class="title">Education</h1>
           <div id="nav-bar-start-contact" class="nav-bar-start"> </div>
+          <p id="test">Hello</p>
         </div>
 
         <!--Contact Section-->
+        <!--Need to download PHP and web server that supports PHP for a functioning contact section"-->
+        <?php include formValidation.php ?>
+        <?php echo $_SERVER["PHP_SELF"]; ?>
         <div id="contact" class="relative section" style="overflow:hidden">
           <h1 id="projects-title" class="title">Contact</h1>
-          <form method="post" style="padding:20px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+          <form method="post" style="padding:20px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
               <section>
                 <div style="float:left;width:20%;margin-right: 2%;">
                   <label class="labelName" for="fname">First Name</label>
@@ -226,6 +232,20 @@
             alert("You have entered an invalid email address!")
             return (false)
           }
+          document.getElementById("test")="working";
+          $(document).ready(function(){
+            $("test").css("color","blue");
+
+            function setWidth (element, adjElement)
+            {
+              widthElement = $(element).css('width');
+              browserWidth= $(window).width();
+              adjElementWidth = $(adjElement).css('width');
+              widthDiff = browserWidth - adjElementWidth;
+              $(element).css('width',widthDiff);
+            }
+            setWidth("#about-blurb-div","#profile-pic-div");*/
+          });
         </script>
     </body>
 </html>
