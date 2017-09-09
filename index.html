@@ -35,11 +35,12 @@
         </div>
 
         <!--About Section-->
-        <div id="about" class="relative section">
-          <div id="profile-pic-div" class="relative">
-            <img id="profile-pic" class="absolute-text" src="Website-Image2.jpg" alt="Heather D'Souza">
+        <div id="about" class="section">
+          <!-- <div id="profile-pic-div" class="relative left" style="overflow:auto;"> -->
+          <div id="profile-pic-div" style="height:inherit;float:left;">
+            <img id="profile-pic" src="Website-Image2.jpg" alt="Heather D'Souza" style="display:block">
           </div>
-          <div id="about-blurb-div" class="relative">
+          <div id="about-blurb-div" style="overflow:hidden;background-color:red;height:inherit;word-wrap:break-word;" class="relative">
             <h1 id="about-title" class="title absolute-text">About</h1>
             <img id="about-background" src="https://wallpaperbrowse.com/media/images/background-7.jpg" alt="background">
             <p id="about-blurb" class="absolute-text body-text">
@@ -71,7 +72,7 @@
         </div>
 
         <!--Projects Section-->
-        <div id="projects" class="relative section">
+        <div id="projects" class="relative section" style="overflow:auto;">
           <h1 id="projects-title" class="title">Projects</h1>
           <p id="projects-blurb">Click on a project to learn more.</p>
           <div class="responsive">
@@ -125,6 +126,7 @@
           <div style="clear:both;height:50px;"></div>
           <div id="nav-bar-start-experience" class="nav-bar-start"> </div>
         </div>
+
 
         <!--Experience Section-->
         <div id="experience" class="relative section">
@@ -232,20 +234,6 @@
             alert("You have entered an invalid email address!")
             return (false)
           }
-          document.getElementById("test")="working";
-          $(document).ready(function(){
-            $("test").css("color","blue");
-
-            function setWidth (element, adjElement)
-            {
-              widthElement = $(element).css('width');
-              browserWidth= $(window).width();
-              adjElementWidth = $(adjElement).css('width');
-              widthDiff = browserWidth - adjElementWidth;
-              $(element).css('width',widthDiff);
-            }
-            setWidth("#about-blurb-div","#profile-pic-div");*/
-          });
         </script>
     </body>
 </html>
