@@ -267,7 +267,7 @@ p#projects-blurb
 
 .project-button
 {
-    border:0;
+    border: none;
 }
 
 table#projects-table
@@ -331,6 +331,7 @@ p.body-text
     font-family: Aleo, Avenir, Arial;
     text-align: justify;
     font-size: 20px;
+    color: white;
 }
 
 .nav-bar-element:hover
@@ -361,6 +362,7 @@ a
     font-size: 30px;
     font-family: Avenir, Arial;
     color: white;
+    left: 10px;
 }
 
 .relative
@@ -386,6 +388,12 @@ div.section
   padding-top: 50px;
   background: #fff;
 }
+
+.float-left {
+  float:left;
+  left:0;
+}
+
 
 .timeline ul li::after {
   content: '';
@@ -422,11 +430,11 @@ div.section
   left: 45px;
 }
 
-.timeline ul li div::before {
+/*.timeline ul li div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #F45B69 transparent transparent;
-}
+}*/
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
