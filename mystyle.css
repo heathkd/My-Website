@@ -394,6 +394,23 @@ div.section
   left:0;
 }
 
+.section h2
+{
+  display: inline-block;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+}
+
 
 .timeline ul li::after {
   content: '';
