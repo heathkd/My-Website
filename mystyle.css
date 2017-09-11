@@ -392,6 +392,7 @@ div.section
 .float-left {
   float:left;
   left:0;
+  bottom:0;
 }
 
 .section h2
@@ -447,11 +448,11 @@ div.section
   left: 45px;
 }
 
-/*.timeline ul li div::before {
+.timeline ul li div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #F45B69 transparent transparent;
-}*/
+}
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
