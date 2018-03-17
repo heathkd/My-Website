@@ -1,0 +1,46 @@
+<!doctype html> <!-- tells what browser to use (HTML5) -->
+<html class="no-js" lang="en" dir="ltr">
+  <head> <!-- meta data and style sheet links (information about the site) -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used for responsivity --> 
+    <title>Foundation for Sites</title> <!-- Name of Site -->
+    <link rel="stylesheet" href="css/foundation.css"> <!-- should be changed to foundation.min.css when ready for production -->
+    <link rel="stylesheet" href="css/app.css"> <!-- the last css file overrides the styling above ("cascading style sheet") -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+  <body> 
+    <div data-sticky-container id="nav-container">
+      <div class="title-bar"  id="nav-bar" data-sticky data-options="marginTop:0;"> 
+        <div class="title-bar-left">
+          <span class="title-bar-title">
+            <img src="/home/hdsouza/Pictures/gear_edited.png" alt="Gear" style="width:4.25em; height:4.25">
+          </span>
+        </div>
+        <div class="title-bar-right">
+          <ul class="dropdown menu align-right" data-dropdown-menu>
+            <li>
+              <a href="#" class="button nav-bar-heading">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" class="button nav-bar-heading">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#" class="button nav-bar-heading">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="#" class="button nav-bar-heading">SKILLS</a>
+            </li>
+            <li>
+              <a href="#" class="button nav-bar-heading">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script> <!-- putting the scripts at the bottom reduces load time (if it was placed at the top, all the interactions would have to load before the content can load) -->
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script> <!-- change to foundation.min.js when ready for production -->
+    <script src="js/app.js"></script>
+  </body>
+</html> 

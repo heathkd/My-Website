@@ -1,0 +1,30 @@
+/* to add own css */
+#nav-container {
+	box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
+}
+
+#nav-bar {
+	background-color: #2A81B0;
+}
+
+.nav-bar-heading {
+	color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em; 
+}
+
+.title-bar-right a.button
+{
+	background-color: #2A81B0;
+	margin: 0.063em 0.063em;
+}
+
+.title-bar-right a.button:hover
+{
+	border-color: #FFFFFF;
+	border-radius: 0.3em;
+	background-color: rgb(42, 129, 176, 0.4) /*not working*/
+}
+
+
+
