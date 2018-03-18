@@ -1,4 +1,11 @@
 /* to add own css */
+/* general */
+.title {
+	text-decoration: underline;
+}
+
+
+/* navigation bar */
 #nav-container {
 	box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
 }
@@ -25,6 +32,38 @@
 	border-radius: 0.3em;
 	background-color: rgb(42, 129, 176, 0.4) /*not working*/
 }
+
+/* about section */
+#about-content 
+{
+	text-align: center;
+}
+
+#about-title {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin-bottom: 3rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #fefefe;
+  box-shadow: 0.1em 0.1em 0.5em #888888;
+  overflow: hidden;
+  color: #0a0a0a; 
+}
+
+
+
+
+
 
 
 
