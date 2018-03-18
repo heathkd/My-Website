@@ -1,7 +1,9 @@
 /* to add own css */
 /* general */
-.title {
+.section-title {
 	text-decoration: underline;
+	padding-top: 1.1em;
+	padding-bottom: 1.1em;
 }
 
 
@@ -40,8 +42,7 @@
 }
 
 #about-title {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	
 }
 
 .card {
@@ -58,6 +59,33 @@
   box-shadow: 0.1em 0.1em 0.5em #888888;
   overflow: hidden;
   color: #0a0a0a; 
+}
+
+/* experience section */
+.experience-employer {
+	color: blue;
+	font-size: 1.5em;
+}
+
+.experience-job-position {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.experience-logo-column {
+	text-align: right;
+}
+
+.experience-logo {
+	border-radius: 2.2em;
+}
+
+.experience-job-description {
+	font-size: 1em;
+}
+
+.experience-row {
+	margin-bottom: 1.5em;
 }
 
 
