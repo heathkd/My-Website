@@ -88,6 +88,24 @@
 	margin-bottom: 1.5em;
 }
 
+/*skills section*/
+.skill {
+	list-style-type: none;
+}
+
+/*contact section*/
+.contact {
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
+/*footer*/
+#footer {
+	text-align: center;
+	margin-top: 3em;
+}
+
+
 
 
 
