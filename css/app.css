@@ -59,7 +59,37 @@
   box-shadow: 0.1em 0.1em 0.5em #888888;
   overflow: hidden;
   color: #0a0a0a; 
+  margin: 0 auto;
 }
+
+.project-card{
+	max-width:300px;
+	margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+	#project-block-grid {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	#project-block-grid {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+@media screen and (min-width: 64em) {
+		#project-block-grid {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+
 
 /* experience section */
 .experience-employer {
