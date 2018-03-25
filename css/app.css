@@ -102,12 +102,16 @@
 	font-size: 1.2em;
 }
 
-.experience-logo-column {
+/*@media screen and (min-width: 40em) {
+	.column.experience-logo {
 	text-align: right;
-}
+}*/
+
 
 .experience-logo {
 	border-radius: 2.2em;
+	padding-right: 0.9375rem;
+  	padding-left: 0.9375rem;
 }
 
 .experience-job-description {
@@ -115,7 +119,42 @@
 }
 
 .experience-row {
-	margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 39.9375em) {
+	.max-dimensions {
+	  	width: 100%;
+	  	height: 100%;
+	}
+	.experience-logo.resize {
+		margin-bottom: 0.25em;
+		width: 100%;
+	  	height: 100%;
+	}
+	.experience-row {
+		margin-left:5%;
+		margin-right:5%;
+		margin-bottom: 0.5em;
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.experience-row {
+		margin-left:10%;
+		margin-right:10%;
+		margin-bottom: 1.5em;
+	}
+	.image-resize {
+		width:50%;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.experience-row {
+		margin-left:20%;
+		margin-right:20%;
+		margin-bottom: 1.5em;
+	}
 }
 
 /*skills section*/
