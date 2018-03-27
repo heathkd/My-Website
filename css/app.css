@@ -22,6 +22,17 @@
     font-size: 1.4em; 
 }
 
+.title-bar-left {
+	display:table;
+	list-style-type: none;
+}
+
+.title-bar-name {
+	vertical-align:middle; 
+	display: table-cell;
+	padding-left: 0.25em;
+}
+
 .title-bar-right a.button
 {
 	background-color: #2A81B0;
@@ -35,6 +46,14 @@
 	background-color: rgb(42, 129, 176, 0.4) /*not working*/
 }
 
+.gear {
+	width:4.25em; 
+	height:4.25em; 
+	max-heigh:4.25em; 
+	max-width:4.25em;
+}
+
+
 /* about section */
 #about-content 
 {
@@ -45,6 +64,8 @@
 	
 }
 
+
+/* project section */
 .card {
   display: -ms-flexbox;
   display: flex;
@@ -62,11 +83,24 @@
   margin: 0 auto;
 }
 
-.project-card{
+.project-card {
 	max-width:300px;
 	margin-bottom: 2em;
 }
 
+.pop-up {
+	border-radius: 0.5em;
+}
+
+@media print, screen and (max-width: 40em) {
+    .reveal.medium {
+		width: 75%;
+		max-width: 62.5rem;
+		right: auto;
+		left: auto;
+		margin: 0 auto; 
+	}
+}
 
 @media screen and (max-width: 39.9375em) {
 	#project-block-grid {
@@ -88,8 +122,6 @@
 		padding-right: 20%;
 	}
 }
-
-
 
 /* experience section */
 .experience-employer {
@@ -173,12 +205,3 @@
 	text-align: center;
 	margin-top: 3em;
 }
-
-
-
-
-
-
-
-
-

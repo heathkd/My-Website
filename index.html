@@ -10,29 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body syle="padding-left:0; padding-right:0"> 
+    
+    <!-- navigation bar -->
     <div data-sticky-container id="nav-container">
       <div class="title-bar"  id="nav-bar" data-sticky data-options="marginTop:0;"> 
         <div class="title-bar-left">
-          <span class="title-bar-title">
-            <img src="/home/hdsouza/Pictures/gear_edited.png" alt="Gear" style="width:4.25em; height:4.25">
-          </span>
+          <ul class="align-left title-bar-left">
+            <li><span class="title-bar-title">
+              <img class="gear" src="/home/hdsouza/Pictures/gear_edited.png" alt="Gear">
+            </span></li>
+            <li class="nav-bar-heading title-bar-name">HEATHER D'SOUZA</li>
+          </ul>
         </div>
         <div class="title-bar-right">
           <ul class="dropdown menu align-right" data-dropdown-menu>
             <li>
-              <a href="#" class="button nav-bar-heading">ABOUT</a>
+              <a href="#about" class="button nav-bar-heading">ABOUT</a>
             </li>
             <li>
-              <a href="#" class="button nav-bar-heading">PROJECTS</a>
+              <a href="#projects" class="button nav-bar-heading">PROJECTS</a>
             </li>
             <li>
-              <a href="#" class="button nav-bar-heading">EXPERIENCE</a>
+              <a href="#experience" class="button nav-bar-heading">EXPERIENCE</a>
             </li>
             <li>
-              <a href="#" class="button nav-bar-heading">SKILLS</a>
+              <a href="#skills" class="button nav-bar-heading">SKILLS</a>
             </li>
             <li>
-              <a href="#" class="button nav-bar-heading">CONTACT</a>
+              <a href="#contact" class="button nav-bar-heading">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -44,7 +49,7 @@
     </section>
 
     <!-- about -->
-    <section class="row align-middle collapse medium-unstack">
+    <section class="row align-middle collapse medium-unstack" id="about">
       <div class="column" id="about-content">
         <a href="https://placeholder.com"><img src="http://via.placeholder.com/920x720"></a>
       </div>
@@ -57,11 +62,11 @@
     </section>
 
     <!-- projects -->
-    <section>
+    <section id="projects">
       <h1 class="text-center section-title" id="about-title">WHAT I'VE DONE SO FAR</h1>
       <div class="row small-up-1 medium-up-2 large-up-3" id="project-block-grid">
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-1">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -70,7 +75,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-2">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -79,7 +84,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-3">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -88,7 +93,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-4">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -97,7 +102,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-5">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -106,7 +111,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="card project-card" >
+          <div class="card project-card" data-open="project-6">
             <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200"></a>
             <div class="card-section">
               <h4>Project Name</h4>
@@ -115,10 +120,66 @@
           </div>
         </div> 
       </div>
+
+      <!-- card modals -->
+      <div class="reveal pop-up medium" id="project-1" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium" id="project-2" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium" id="project-3" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium" id="project-4" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium" id="project-5" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium" id="project-6" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center">Project Name</h1>
+        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
+        <p>Description</p>
+        <p>Project Link: <a href=""></a></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </section>
 
     <!-- Experience -->
-    <section>
+    <section id="experience">
       <h1 class="text-center section-title">WHERE I'VE WORKED</h1>
       <div class="row medium-unstack experience-row">
         <div class="max-dimensions image-resize">
@@ -156,7 +217,7 @@
     </section>
 
     <!-- skills -->
-    <section>
+    <section id="skills">
       <div
       <div class="row align-middle">
         <div class="column">
@@ -209,7 +270,7 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1 class="text-center section-title">LET'S GET TALKING</h1>
       <div class="row medium-unstack">
         <div class="column">
