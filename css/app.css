@@ -6,8 +6,21 @@
 	padding-bottom: 1.1em;
 }
 
+section {
+	position: relative;
+}
+
 
 /* navigation bar */
+.anchor {
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -80px;
+}
+
 #nav-container {
 	box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
 }
