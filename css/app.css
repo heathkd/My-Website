@@ -84,12 +84,14 @@ color: #fefefe;
     box-shadow: 0 7px 0 black, 0 14px 0 black; 
 }
 
-#nav-container {
-	box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
-}
-
 #nav-bar {
 	background-color: #2A81B0;
+}
+
+#nav-bar .in-canvas-menu {
+	background-color: inherit;
+	height: 50px;
+	top: 0;
 }
 
 .nav-bar-heading {
