@@ -12,34 +12,30 @@
   <body> 
     
     <!-- navigation bar -->
-    <div data-sticky-container id="nav-container">
-      <div class="top-bar stacked-for-medium title-bar"  id="nav-bar" data-sticky data-options="marginTop:0;"> 
-        <div class="title-bar-left">
-          <ul class="align-left menu">
-            <li><span class="title-bar-title">
-              <img class="gear" src="/home/hdsouza/Pictures/gear_edited.png" alt="Gear">
-            </span></li>
-            <li class="nav-bar-heading title-bar-name">HEATHER D'SOUZA</li>
+    <div class="off-canvas-wrapper canvas">
+      <div class="row align-middle">
+        <div class="off-canvas position-left in-canvas-for-large column nav-bar-heading large-4" id="off-canvas-left" data-off-canvas>HEATHER D'SOUZA</div>
+        <div class="off-canvas position-right in-canvas-for-large column" id="off-canvas-right" data-off-canvas>  
+          <ul class="menu vertical large-horizontal align">
+            <li><a href="#about-anchor" class="button nav-bar-heading">ABOUT</a></li>
+            <li><a href="#projects-anchor" class="button nav-bar-heading">PROJECTS</a></li>
+            <li><a href="#experience-anchor" class="button nav-bar-heading">EXPERIENCE</a></li>
+            <li><a href="#skills-anchor" class="button nav-bar-heading">SKILLS</a></li>
+            <li><a href="#contact-anchor" class="button nav-bar-heading">CONTACT</a></li>
           </ul>
+          <!-- button must be the last element -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="title-bar-right">
-          <ul class="dropdown vertical medium-horizontal menu align-right" data-dropdown-menu>
-            <li>
-              <a href="#about-anchor" class="button nav-bar-heading">ABOUT</a>
-            </li>
-            <li>
-              <a href="#projects-anchor" class="button nav-bar-heading">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#experience-anchor" class="button nav-bar-heading">EXPERIENCE</a>
-            </li>
-            <li>
-              <a href="#skills-anchor" class="button nav-bar-heading">SKILLS</a>
-            </li>
-            <li>
-              <a href="#contact-anchor" class="button nav-bar-heading">CONTACT</a>
-            </li>
-          </ul>
+      </div>
+      
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="row align-middle">
+          <div class="nav-bar-heading text-left hide-for-large column small-8 medium-8" id="name">HEATHER D'SOUZA</div>
+          <div class="column small-4 medium-4">
+            <button type="button" class="button hide-for-large menu-icon float-right" data-toggle="off-canvas-right"></button>  
+          </div>
         </div>
       </div>
     </div>
@@ -311,7 +307,7 @@
           </form>
           <div class="row align-right">
             <div class="column small-6 medium-6 large-6 text-right">
-              <button type="button" class="button basic">Submit</button>
+              <button type="button" class="button submit">Submit</button>
             </div>
           </div>
         </div>
