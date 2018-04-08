@@ -6,7 +6,12 @@
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
     font-weight: 600;
-    text-decoration: underline;
+}
+
+.section-title span {
+	border-bottom: 1px solid black;
+    text-decoration: none;
+    width: 100%;
 }
 
 section {
