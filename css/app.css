@@ -8,6 +8,12 @@
     font-weight: 600;
 }
 
+@media screen and (max-width: 48em) {
+	.title-font-small {
+		font-size: 38px;
+	}
+}
+
 .section-title span {
 	border-bottom: 1px solid black;
     text-decoration: none;
