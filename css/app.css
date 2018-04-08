@@ -15,7 +15,7 @@
 }
 
 .section-title span {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #8A8A8A;
     text-decoration: none;
     width: 100%;
 }
@@ -24,6 +24,9 @@ section {
 	position: relative;
 }
 
+.white-text {
+	color: white;
+}
 
 /* navigation bar */
 .anchor {
@@ -163,13 +166,21 @@ color: #fefefe;
 
 
 /* about section */
-#about-content 
-{
-	text-align: center;
+#about {
+	background-color: #2B2B2A
 }
 
-#about-title {
-	
+#about-content {
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+}
+
+#about-content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.3;
 }
 
 
