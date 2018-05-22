@@ -1,4 +1,3 @@
-/* to add own css */
 /* general */
 .section-title {
 	padding-top: 1.1em;
@@ -196,10 +195,14 @@ color: #fefefe;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   background: #fefefe;
-  box-shadow: 0.1em 0.1em 0.5em #888888;
+  box-shadow: 0.1em 0.1em 0.3em #888888;
   overflow: hidden;
   color: #0a0a0a; 
   margin: 0 auto;
+}
+
+.card:hover {
+	box-shadow: 0.1em 0.1em 0.7em #888888;
 }
 
 .card-section {
