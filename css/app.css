@@ -289,6 +289,10 @@ color: #fefefe;
 	color: #167FC9;
 }
 
+#experience-footer {
+	padding-top: 2em;
+}
+
 .experience-job-position {
 	font-family: 'Montserrat', sans-serif;
 	font-style: italic;
@@ -314,7 +318,7 @@ color: #fefefe;
 .experience-job-description {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
-	font-weight: lighter;
+	font-weight: 300;
 	line-height: 1.3;
 }
 
