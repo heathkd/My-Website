@@ -116,6 +116,12 @@ color: #fefefe;
     font-size: 1.4em; 
 }
 
+.nav-gear {
+	max-width: 40px;
+/*	padding-right: 5px;
+*/	
+}
+
 .canvas {
 	background-color: #2A81B0;
 	min-height: 2em;
