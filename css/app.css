@@ -397,9 +397,11 @@ color: #fefefe;
 }
 
 /*contact section*/
-.contact {
-	padding-left: 4em;
-	padding-right: 4em;
+.contact div{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.3;
 }
 
 .submit {
