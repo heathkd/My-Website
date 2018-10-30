@@ -169,6 +169,20 @@ color: #fefefe;
 	max-width:4.25em;
 }
 
+/* homepage section */
+.homepage-heading {
+	color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.0em;  
+}
+
+a.homepage-heading:visited {
+    color: white;
+}
+
+a.homepage-heading:hover {
+    color: #dbdbdb;
+}
 
 /* about section */
 #about {
