@@ -89,7 +89,7 @@
       <div class="row small-up-1 medium-up-2 large-up-3" id="project-block-grid">
         <div class="column">
           <div class="card project-card" data-open="project-1">
-            <img class="project-image" src="images/harmony.png">
+            <img class="project-image" src="images/terminal.png">
             <div class="card-section">
               <h4 class="project-title">XenoClassify</h4>
             </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="column">
           <div class="card project-card" data-open="project-2">
-            <img class="project-image" src="images/butterfly.jpg">
+            <img class="project-image" src="images/pharmafriendtitle.png">
             <div class="card-section">
               <h4 class="project-title">PharmaFriend</h4>
             </div>
@@ -105,7 +105,7 @@
         </div>
         <div class="column">
           <div class="card project-card" data-open="project-3">
-            <img class="project-image" src="images/EZWalk.jpg">
+            <img class="project-image" src="images/fog.png">
             <div class="card-section">
               <h4 class="project-title">Freezing of Gait</h4>
             </div>
@@ -113,7 +113,7 @@
         </div>
         <div class="column">
           <div class="card project-card" data-open="project-4">
-            <img class="project-image" src="images/EZWalk.jpg">
+            <img class="project-image" src="images/homepage.png">
             <div class="card-section">
               <h4 class="project-title">Portfolio Website</h4>
             </div>
@@ -121,7 +121,7 @@
         </div>
         <div class="column">
           <div class="card project-card" data-open="project-5">
-            <img class="project-image" src="images/harmony.png">
+            <img class="project-image" src="images/cells.jpg">
             <div class="card-section">
               <h4 class="project-title">Cell Biology Publication</h4>
             </div>
@@ -138,56 +138,57 @@
       </div>
 
       <!-- card modals -->
-      <div class="reveal pop-up medium" id="project-1" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">XenoClassify</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>Xenoclassify is an open-source command-line tool that classifies sequencing data from xenograft samples with 96% accuracy. The classification algorithm was created by performing statistical analysis on data known to be from the host or graft species to identify features characteristic of host or graft DNA. The tool is able to classify DNA from a xenograft sample into four classes: host, graft, both, or neither, thus allowing bioinformaticians to carry out analysis on the DNA of choice. Code optimizations such as multiprocessing and chunking were employed to efficiently handle large BAM files (100 GB+).</p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-1" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">XenoClassify</h1>
+        <img class="text-center project-modal-image" src="images/xenograft.png" alt="xenograft">
+        <img class="float-center project-modal-image" src="images/xenoclassify.png" alt="xenoclassify">
+        <p class="project-modal-description">Xenoclassify is an open-source command-line tool that classifies sequencing data from xenograft samples with 96% accuracy. The classification algorithm was created by performing statistical analysis on data known to be from the host or graft species to identify features characteristic of host or graft DNA. The tool is able to classify DNA from a xenograft sample into four classes: host, graft, both, or neither, thus allowing bioinformaticians to carry out analysis on the DNA of choice. Code optimizations such as multiprocessing and chunking were employed to efficiently handle large BAM files (100 GB+).<br></p>
+        <p class="project-modal-repo"><b>Click <a href="https://github.com/oicr-gsi/xenoclassify">here</a> to visit the project's Github repository.</b></p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal pop-up medium" id="project-2" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">PharmaFriend</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>Over-the-counter drugs are easily accessible to the consumer. They do not require a prescription to purchase, thus presenting the concern that individuals may purchase medication detrimental to their drug plan and health. Pharmafriend is a chat-bot based android app that prevents this from happening. The app accesses drug data from REST APIs to assess the risks of the medication. It communicates with the user via a chat-bot that can recognize and respond to social cues. This bot was created by developing a language-understanding model using Microsoft LUIS. </p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-2" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">PharmaFriend</h1>
+        <img class="float-center project-modal-image" style="max-width:400px" src="images/pharmafriendtitle.png">
+        <p class="project-modal-description">Over-the-counter drugs are easily accessible to the consumer. They do not require a prescription to purchase, thus presenting the concern that individuals may purchase medication detrimental to their drug plan and health. Pharmafriend is a chat-bot based android app that prevents this from happening. The app accesses drug data from REST APIs to assess the risks of the medication. It communicates with the user via a chat-bot that can recognize and respond to social cues. This bot was created by developing a language-understanding model using Microsoft LUIS. </p>
+        <p class="project-modal-repo">Click <a href="https://github.com/atatmaja/pharmaFriend">here</a> to visit the project's Github repository.</p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal pop-up medium" id="project-3" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">Freezing of Gait</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>In my first year of engineering, I designed a wearable device that detects freezing of gait in Parkinson’s patients with a 94% success rate. The brace was fashioned from a number of hardware, software, and structural components. The embedded system used an Arduino, IMU, laser, and motor fastened to an ankle cast. The detection algorithm identifies frequency changes in acceleration to administer physical and visual cues to reinitiate normal walking. </p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-3" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">Freezing of Gait</h1>
+        <img class="float-center project-modal-image" src="images/fog_labelled.png" alt="Freezing of gait device">
+        <p class="project-modal-description">In my first year of engineering, I designed a wearable device that detects freezing of gait in Parkinson’s patients with a 94% success rate. The brace was fashioned from a number of hardware, software, and structural components. The embedded system used an Arduino, IMU, laser, and motor fastened to an ankle cast. The detection algorithm identifies frequency changes in acceleration to administer physical and visual cues to reinitiate normal walking. </p>
+        <p class="project-modal-repo">
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal pop-up medium" id="project-4" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">Portfolio Website</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>This portfolio website is the website you are currently viewing. The design of the website was created using UX/UI principles. High fidelity wireframes were created with UXPin to outline navigation and content layout. A barebones scaffold was implemented with Foundation, a javascript library. Personalized styling was added with CSS.</p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-4" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">Portfolio Website</h1>
+        <img class="float-center project-modal-image" src="images/homepage.png">
+        <p class="project-modal-description">This portfolio website is the website you are currently viewing. The design of the website was created using UX/UI principles. High fidelity wireframes were created with UXPin to outline navigation and content layout. A barebones scaffold was implemented with Foundation, a javascript library. Personalized styling was added with CSS.</p>
+        <p class="project-modal-repo"><b>Click <a href="https://github.com/heathkd/My-Website">here</a> to visit the project's Github repository.</b></p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal pop-up medium" id="project-5" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">Cell Biology Publication</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>Description</p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-5" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">Cell Biology Publication</h1>
+        <img class="float-center project-modal-image" src="">
+        <p class="project-modal-description">Description</p>
+        <p class="project-modal-repo"><b>Click <a href="https://elifesciences.org/articles/26957">here</a> to view the research paper.</b></p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal pop-up medium" id="project-6" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center">Project Name</h1>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/300x200" alt="project-image"></a>
-        <p>Description</p>
-        <p>Project Link: <a href=""></a></p>
+      <div class="reveal pop-up medium project-modal" id="project-6" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">Project Name</h1>
+        <img class="float-center project-modal-image" src="images/xenoclassify.png">
+        <p class="project-modal-description">Description</p>
+        <p class="project-modal-repo"><b>Click <a href="">here</a> to visit the project's Github repository.</b></p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>

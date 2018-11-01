@@ -250,6 +250,32 @@ a.homepage-heading:hover {
 	font-weight: normal;
 }
 
+.project-modal {
+	padding: 2.2em;
+}
+
+.project-modal-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+.project-modal-description {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	padding-top: 1em;
+}
+
+.project-modal-image {
+	margin-bottom: 1em
+}
+
+.project-modal-repo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
 .pop-up {
 	border-radius: 0.5em;
 }
