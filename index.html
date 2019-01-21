@@ -64,16 +64,16 @@
     </div>
 
     <!-- homepage -->
-    <span id="homepage-anchor" class="anchor" style="position: relative; top:0px"></span>
+    <span id="homepage-anchor" class="anchor" style="position: relative; top:-50px;"></span>
     <section>
       <img src="images/homepage.png">
     </section>
 
     <!-- about -->
     <section class="row align-middle collapse medium-unstack white-text" id="about">
-      <span id="about-anchor" class="anchor" style="position: relative; top:-319px"></span>
+      <span id="about-anchor" class="anchor" style="position: relative; top:-400px"></span>
       <div class="column">
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/920x720"></a>
+        <img src="images/heather.png" alt="Heather">
       </div>
       <div class="column" style="padding-right:2em; padding-left:2em" id="about-content">
           <h1 class="text-center section-title title-font-small"><span>HI THERE</span></h1>
@@ -89,18 +89,26 @@
       <h1 class="text-center section-title title-font-small"><span>WHAT I'VE DONE SO FAR</span></h1>
       <div class="row small-up-1 medium-up-2 large-up-3" id="project-block-grid">
         <div class="column">
-          <div class="card project-card" data-open="project-1">
-            <img class="project-image" src="images/terminal.png">
-            <div class="card-section">
-              <h4 class="project-title">XenoClassify</h4>
-            </div>
-          </div>
-        </div>
-        <div class="column">
           <div class="card project-card" data-open="project-2">
             <img class="project-image" src="images/pharmafriendtitle.png">
             <div class="card-section">
               <h4 class="project-title">PharmaFriend</h4>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card project-card" data-open="project-6">
+            <img class="project-image" src="images/twitalyticsGraphs.jpg">
+            <div class="card-section">
+              <h4 class="project-title">Twitalytics</h4>
+            </div>
+          </div>
+        </div> 
+        <div class="column">
+          <div class="card project-card" data-open="project-1">
+            <img class="project-image" src="images/terminal.png">
+            <div class="card-section">
+              <h4 class="project-title">XenoClassify</h4>
             </div>
           </div>
         </div>
@@ -128,32 +136,34 @@
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="card project-card" data-open="project-6">
-            <img class="project-image" src="images/butterfly.jpg">
-            <div class="card-section">
-              <h4 class="project-title">Edge Detection Algorithm</h4>
-            </div>
-          </div>
-        </div> 
       </div>
 
       <!-- card modals -->
+      <div class="reveal pop-up medium project-modal" id="project-2" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">PharmaFriend</h1>
+        <img class="float-center project-modal-image" style="max-width:400px" src="images/pharmafriendtitle.png">
+        <p class="project-modal-description">Over-the-counter drugs are easily accessible to the consumer. They do not require a prescription to purchase, thus presenting the concern that individuals may purchase medication detrimental to their drug plan and health. Pharmafriend is a chat-bot based android app that prevents this from happening. The app accesses drug data from REST APIs to assess the risks of the medication. It communicates with the user via a chat-bot that can recognize and respond to social cues. This bot was created by developing a language-understanding model using Microsoft LUIS. </p>
+        <p class="project-modal-repo">Click <a href="https://github.com/atatmaja/pharmaFriend">here</a> to visit the project's Github repository.</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal pop-up medium project-modal" id="project-6" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+        <h1 class="text-center project-modal-title">Twitalytics</h1>
+        <img class="float-center project-modal-image" src="images/twitalytics.png">
+        <p class="project-modal-description">Want to see how a product, service, person or idea is doing in the court of public opinion? Market analysts are experts at collecting data from a large array of sources, but monitoring public happiness is time consuming and expensive. Why bother with all of this when the required data can be easily mined from social media websites such as Twitter? Through aggregating tweets, performing sentiment analysis and visualizing the data, Twitalytics makes it easy for anybody to monitor anything in regards to customer satisfaction or public perception.</p>
+        <p class="project-modal-repo"><b>Click <a href="https://github.com/seanlee98/twitalytics">here</a> to visit the project's Github repository.</b></p>
+        <p class="project-modal-repo"><b>This project won the "Best Entity Extraction" category at Hack Western 2018. Click <a href="https://devpost.com/software/twitalytics-icdn3l">here</a> to visit the project's Devpost.</b></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       <div class="reveal pop-up medium project-modal" id="project-1" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
         <h1 class="text-center project-modal-title">XenoClassify</h1>
         <img class="text-center project-modal-image" src="images/xenograft.png" alt="xenograft">
         <img class="float-center project-modal-image" src="images/xenoclassify.png" alt="xenoclassify">
         <p class="project-modal-description">Xenoclassify is an open-source command-line tool that classifies sequencing data from xenograft samples with 96% accuracy. The classification algorithm was created by performing statistical analysis on data known to be from the host or graft species to identify features characteristic of host or graft DNA. The tool is able to classify DNA from a xenograft sample into four classes: host, graft, both, or neither, thus allowing bioinformaticians to carry out analysis on the DNA of choice. Code optimizations such as multiprocessing and chunking were employed to efficiently handle large BAM files (100 GB+).<br></p>
         <p class="project-modal-repo"><b>Click <a href="https://github.com/oicr-gsi/xenoclassify">here</a> to visit the project's Github repository.</b></p>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="reveal pop-up medium project-modal" id="project-2" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center project-modal-title">PharmaFriend</h1>
-        <img class="float-center project-modal-image" style="max-width:400px" src="images/pharmafriendtitle.png">
-        <p class="project-modal-description">Over-the-counter drugs are easily accessible to the consumer. They do not require a prescription to purchase, thus presenting the concern that individuals may purchase medication detrimental to their drug plan and health. Pharmafriend is a chat-bot based android app that prevents this from happening. The app accesses drug data from REST APIs to assess the risks of the medication. It communicates with the user via a chat-bot that can recognize and respond to social cues. This bot was created by developing a language-understanding model using Microsoft LUIS. </p>
-        <p class="project-modal-repo">Click <a href="https://github.com/atatmaja/pharmaFriend">here</a> to visit the project's Github repository.</p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -178,18 +188,9 @@
       </div>
       <div class="reveal pop-up medium project-modal" id="project-5" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
         <h1 class="text-center project-modal-title">Cell Biology Publication</h1>
-        <img class="float-center project-modal-image" src="">
-        <p class="project-modal-description">Description</p>
+        <img class="float-center project-modal-image" src="images/cells.jpg">
+        <p class="project-modal-description">One characteristic that is present in every cell type is uniformity. This attribute invites the following questions: is uniformity important and if it is why is size so uniform despite variation in growth rate and cell cycle length.<br><br>During my time at Sick Kids, I worked with Dr.Kafri and Dr.Ginzberg to unravel the mystery of cell size uniformity. Through experimentation and statistical analysis we were able to identify an inverse correlation between G1 length and growth rate. This paper discusses the ability of animal cells to autonomously sense their size and make corrections to prevent cell size from large aberrations.</p>
         <p class="project-modal-repo"><b>Click <a href="https://elifesciences.org/articles/26957">here</a> to view the research paper.</b></p>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="reveal pop-up medium project-modal" id="project-6" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
-        <h1 class="text-center project-modal-title">Project Name</h1>
-        <img class="float-center project-modal-image" src="images/xenoclassify.png">
-        <p class="project-modal-description">Description</p>
-        <p class="project-modal-repo"><b>Click <a href="">here</a> to visit the project's Github repository.</b></p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -210,7 +211,7 @@
         <div class="column">
           <h2 class="experience-employer">Tribalscale</h2>
           <h3 class="experience-job-position">Agile Software Engineer, Fall 2018</h3>
-          <p class="experience-job-description">I am developing iOS applications in Swift and Objective-C and employing extreme programming methodologies to execute faster release cycles. </p>
+          <p class="experience-job-description">Developed iOS applications and SDK features in Swift and Objective-C while  employing extreme programming methodologies to execute faster release cycles. </p>
         </div>
       </div>
       <div class="row medium-unstack experience-row">
@@ -233,6 +234,7 @@
           <p class="experience-job-description">I co-developed a cell-tracking software that tracks the movement of cells in a time-course experiment using Matlab’s image processing library. My research work focused on the ability of cells to autonomously sense their size and make corrections to prevent large aberrations. </p>
         </div>
       </div>
+      <p class="text-center" style="padding-top: 20px">Interested in learning more? Check out my <b><a href="resume.pdf">résumé</a></b>!</p>
       <div id="experience-footer">
         <img alt="waves" src="images/waves.png">
       </div>
@@ -271,9 +273,10 @@
             <li class="text-center skill">Swift</li>
             <li class="text-center skill">Objective-C</li>
             <li class="text-center skill">Java</li>
+            <li class="text-center skill">Python</li>
             <li class="text-center skill">C++</li>
             <li class="text-center skill">C#</li>
-            <li class="text-center skill">Python</li>
+            <li class="text-center skill">Bash</li>
             <li class="text-center skill">Perl</li>            
           </ul>
         </div>
